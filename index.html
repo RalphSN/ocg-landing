@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCG Game</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 自定義CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"><img src="./images/logo.png" alt="logo" /></div>
+        <div class="title-container"><h1 class="title">動漫娛樂城</h1></div>
+        <nav class="nav">
+          <i class="fa-solid fa-star fa-2x"></i>
+          <a href="#" class="adult-entry"
+            >加入 <br />
+            最愛</a
+          >
+        </nav>
+      </header>
+
+      <main>
+        <!-- Swiper -->
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/cover01.png" alt="Hero Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cover02.png" alt="Hero Image 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cover03.png" alt="Hero Image 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cover04.png" alt="Hero Image 4" />
+            </div>
+          </div>
+
+          <!-- 導航按鈕 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- 分頁器 -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <section class="download-section">
+          <div class="download-grid">
+            <div class="download-item">
+              <div class="download-image"><img src="./images/card-image.png" alt="card-image"></div>
+              <div class="download-buttons">
+                <a href="#" class="btn android">Android 下載</a>
+                <a href="#" class="btn ios">iOS 下載</a>
+              </div>
+            </div>
+            <div class="download-item">
+              <div class="download-image"><img src="./images/card-image.png" alt="card-image"></div>
+              <div class="download-buttons">
+                <a href="#" class="btn android">Android 下載</a>
+                <a href="#" class="btn ios">iOS 下載</a>
+              </div>
+            </div>
+            <div class="download-item">
+              <div class="download-image"><img src="./images/card-image.png" alt="card-image"></div>
+              <div class="download-buttons">
+                <a href="#" class="btn android">Android 下載</a>
+                <a href="#" class="btn ios">iOS 下載</a>
+              </div>
+            </div>
+            <div class="download-item">
+              <div class="download-image"><img src="./images/card-image.png" alt="card-image"></div>
+              <div class="download-buttons">
+                <a href="#" class="btn android">Android 下載</a>
+                <a href="#" class="btn ios">iOS 下載</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 自定義 Swiper 初始化脚本 -->
+    <script src="swiper-init.js"></script>
+  </body>
+</html>

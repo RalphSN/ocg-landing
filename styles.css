@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("./images/bg-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .5;
+}
+
+.container {
+  max-width: 1200px;
+  width: 60%;
+  margin: 2rem auto;
+  padding: 0 15px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.header .logo {
+  background-color: #ff00a0;
+  max-width: 180px;
+  padding: 5px;
+}
+
+.header .logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.header .title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+}
+
+.header .title-container .title {
+  display: inline-block;
+  width: 180px;
+  color: #ff00a0;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 180px;
+  margin-right: 10px;
+}
+
+.header .nav .fa-star {
+  height: 100%;
+  margin-right: 5px;
+}
+
+.header .adult-entry {
+  display: inline-block;
+  aspect-ratio: 1/1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.hero-swiper {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ff00a0;
+}
+
+.hero-swiper .swiper-slide {
+  text-align: center;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-swiper .swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* 導航按鈕客製化 */
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-next {
+  color: #ff00a0 !important;
+  display: none;
+}
+
+/* 分頁器客製化 */
+.hero-swiper .swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.5;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: #ff00a0 !important;
+  opacity: 1;
+}
+
+.download-section .download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .download-section .download-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.download-section .download-item {
+  background-color: #ff00a050;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.download-section .download-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.download-section .download-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.download-section .download-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.download-section .download-buttons .btn {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff00a0;
+  transition: background-color 0.35s ease;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+.download-section .download-buttons .btn:hover {
+  color: #cc0080;
+  background-color: #fff;
+}
