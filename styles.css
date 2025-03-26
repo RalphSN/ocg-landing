@@ -294,3 +294,14 @@ body::before {
   color: #cc0080;
   background-color: #fff;
 }
+
+/* loading Ux */
+
+img {
+  opacity: 0;
+  transition: 0.35s ease-in;
+}
+
+img.loaded {
+  opacity: 1;
+}
