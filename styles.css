@@ -130,6 +130,8 @@ body {
   background-color: #ff00a0;
   padding: 0 5px;
   height: 80px;
+  flex-shrink: 0;
+  min-width: 150px;
 }
 
 @media (max-width: 768px) {
