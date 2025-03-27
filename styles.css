@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -24,10 +24,31 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.5;
+} */
+
+/* @media (max-width:768px) {
+  body::before {
+    background-image: url("./images/bg_girl_m.png");
+  }
+} */
+
+.bg-image-fixed {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  bottom: 0;
+  background-image: url('./images/bg_girl.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; 
+  pointer-events: none; 
+  opacity: .5;
 }
 
+
 @media (max-width:768px) {
-  body::before {
+  .bg-image-fixed {
     background-image: url("./images/bg_girl_m.png");
   }
 }
