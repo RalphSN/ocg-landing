@@ -37,17 +37,16 @@ body {
   width: 100%;
   top: 100px;
   bottom: 0;
-  background-image: url('./images/bg_girl.png');
+  background-image: url("./images/bg_girl.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; 
-  pointer-events: none; 
-  opacity: .5;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .bg-image-fixed {
     background-image: url("./images/bg_girl_m.png");
   }
@@ -116,30 +115,28 @@ body {
 
 .header .logo-container {
   display: flex;
-  height: 100%;
   flex: 1;
 }
 
 @media (max-width: 430px) {
-  .logo-container {
+  .header .logo-container {
     width: 100%;
+    flex: 2;
   }
 }
 
 .header .logo {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   background-color: #ff00a0;
-  padding: 5px;
+  padding: 0 5px;
   height: 80px;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header .logo {
-    flex: 2;
+    height: 60px;
   }
-} */
+}
 
 @media (max-width: 768px) {
   .header .logo {
@@ -159,14 +156,14 @@ body {
   position: relative;
   overflow: hidden;
   /* 防止空隙露出背景色 */
-  margin-left: -0.5px; 
-  margin-bottom: -0.5px; 
+  margin-left: -0.5px;
+  margin-bottom: -0.5px;
   /* flex: 1; */
 }
 
 @media (max-width: 768px) {
   .square {
-    display: none;
+    width: 60px;
   }
 }
 
@@ -175,12 +172,7 @@ body {
   inset: 0;
   background-color: #ff00a0;
 
-  /* 水平翻轉後的等腰三角形 */
-  clip-path: polygon(
-    100% 100%,
-    /* 右下 */ 0% 0%,
-    /* 左上 */ 0% 100% /* 左下 */
-  );
+  clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
 }
 
 .header .title-container {
@@ -192,15 +184,19 @@ body {
 }
 
 .header .title-container .title {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   display: inline-block;
-  width: 220px;
   color: #ff00a0;
   font-size: 2.5rem;
+  white-space: nowrap;
 }
 
-@media (max-width:430) {
+@media (max-width: 430px) {
   .header .title-container .title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -249,23 +245,22 @@ body {
   max-width: 1000px;
   height: auto;
   margin-top: 160px;
-  border: 2px solid #ff00a0;
   /* 目前圖片比例 2/1 */
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .hero-swiper {
     margin-top: 160px;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .hero-swiper {
     width: 80%;
   }
 }
 
-@media (max-width:430px) {
+@media (max-width: 430px) {
   .hero-swiper {
     margin-bottom: 10%;
   }
@@ -289,7 +284,6 @@ body {
 .hero-swiper .swiper-button-prev,
 .hero-swiper .swiper-button-next {
   color: #ff00a0 !important;
-  display: none;
 }
 
 /* 分頁器客製化 */
@@ -342,7 +336,11 @@ body {
 
 .download-section .download-buttons {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   gap: 10px;
+  width: 100%;
+  padding: 10px 0;
 }
 
 .download-section .download-buttons .btn {
@@ -355,6 +353,17 @@ body {
   transition: 0.35s ease;
   border-radius: 15px;
   white-space: nowrap;
+  width: 120px;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:430px) {
+  .download-section .download-buttons .btn {
+    transform: scale(.8);
+  }
 }
 
 .download-section .download-buttons .btn:hover {
