@@ -101,7 +101,34 @@ body {
   margin-top: -1px;
 }
 
-.header__lower .bar-flex3 {
+.header__lower .bar-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: right center;
+  height: 100%;
+  width: 100%;
+}
+
+.header__lower .pc {
+  display: block;
+}
+
+.header__lower .mobile {
+  display: none;
+}
+
+@media (max-width:768px) {
+  .header__lower .pc {
+    display: none;
+  }
+  
+  .header__lower .mobile {
+    display: block;
+  }
+}
+
+
+/* .header__lower .bar-flex3 {
   flex: 3;
   background-color: #ff00a0;
 }
@@ -119,7 +146,7 @@ body {
 .header__lower .bar-flex1 .bar-blue {
   background-color: #00bfff;
   flex: 1;
-}
+} */
 
 .header .logo-container {
   display: flex;
