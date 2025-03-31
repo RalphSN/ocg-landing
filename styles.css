@@ -227,7 +227,7 @@ body {
     top: 90px;
     right: 0;
 
-    background-color: #00bfff;
+    background-color: transparent;
     border-radius: 10px;
     padding: 10px;
     animation: floaty 2s ease-in-out infinite;
@@ -244,9 +244,18 @@ body {
   }
 }
 
-.header .nav .fa-star {
-  height: 100%;
+.header .nav .favorite-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
   margin-right: 5px;
+}
+
+.header .nav .favorite-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .header .adult-entry {
