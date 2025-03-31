@@ -286,10 +286,10 @@ body {
 } */
 
 .hero-swiper {
-  width: 70%;
-  max-width: 1000px;
+  max-width: 800px;
   height: auto;
   margin-top: 160px;
+  aspect-ratio: 2/1;
   /* 目前圖片比例 2/1 */
 }
 
@@ -301,12 +301,13 @@ body {
 
 @media (max-width: 768px) {
   .hero-swiper {
-    width: 90%;
+    max-width: 700px;
   }
 }
 
 @media (max-width: 430px) {
   .hero-swiper {
+    max-width: 400px;
     margin-bottom: 15%;
   }
 }
@@ -347,17 +348,24 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin: 20px 0;
-  width: 70%;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 2.5% auto;
 }
 
 @media (max-width: 768px) {
   .download-section .download-grid {
     grid-template-columns: 1fr;
-    width: 95%;
+    max-width: 700px;
   }
 }
+
+@media (max-width:430px) {
+  .download-section .download-grid {
+    max-width: 400px;
+  }
+}
+
+
 
 .download-section .download-item {
   background-color: #ff00a050;
