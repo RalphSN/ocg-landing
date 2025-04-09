@@ -11,6 +11,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#Game1,
+#Game2,
+#Game3,
+#Game4 {
+  scroll-margin-top: 80px;
+}
+
 body {
   background-color: #000;
   color: #fff;
